@@ -22,8 +22,20 @@ const createNewOrder = (req, res) => {
 
 const getAllOrders = (req, res) => {
 
+    orderModel
+    .find({})
+    .then((result)=>{
 
-    
+    res.status(200).json(result)
+
+    }).catch((err)=>{
+        res.status(500).json({
+            success: false,
+            message: "server error",
+          });
+    })
+
+
 };
 
 module.exports = { 
