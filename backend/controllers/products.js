@@ -33,33 +33,54 @@ const getAllProducts = (req, res) => {
     });
 };
 
+const deleteProductById = (req, res) => {
+  const deleteById = req.params.id;
 
-const   deleteProductById = (req,res)=>{
-
-    const deleteById = req.params.id
-
-    productModel
-    .findByIdAndDelete({_id:deleteById})
-    .then((result)=>{
-    res.status(200).json({
+  productModel
+    .findByIdAndDelete({ _id: deleteById })
+    .then((result) => {
+      res.status(200).json({
         success: true,
-        message: `Succeeded to delete product with id: ${deleteById}`
+        message: `Succeeded to delete product with id: ${deleteById}`,
+      });
     })
-    }).catch((err)=>{
+    .catch((err) => {
+      res.status(404).json({
+        success: false,
+        message: `Failed to delete product with id: ${deleteById}`,
+      });
+    });
+};
 
+const updateProductById = (req, res) => {
+  const updateById = req.params.id;
+
+  productModel
+    .findByIdAndUpdate(
+      { _id: updateById },
+      {
+        title: req.body.title,
+        description: req.body.description,
+        price: req.body.price,
+        img: req.body.img,
+      }
+    )
+    .then((result) => {
+      res.status(200).json({
+        success: true,
+        message: `Succeeded to update product with id: ${updateById}`,
+      });
+    }).catch((err)=>{
         res.status(404).json({
             success:false,
-            message: `Failed to delete product with id: ${deleteById}`
+            message: `Failed to update product with id: ${updateById}`
         })
     })
-
-}
-
-
-
+};
 
 module.exports = {
   createNewProduct,
   getAllProducts,
-  deleteProductById
+  deleteProductById,
+  updateProductById,
 };
