@@ -9,11 +9,31 @@ const createNewProduct = (req, res) => {
     price,
     img,
   });
-  product.save().then((result) => {
-    res.status(201).json(result);
-  });
+  product
+    .save()
+    .then((result) => {
+      res.status(201).json(result);
+    })
+    .catch((err) => {
+      res.status(404).json(err);
+    });
+};
+
+const getAllProducts = (req, res) => {
+  productModel
+    .find({})
+    .then((result) => {
+      res.status(200).json(result);
+    })
+    .catch((err) => {
+      res.status(500).json({
+        success: false,
+        message: "server error",
+      });
+    });
 };
 
 module.exports = {
   createNewProduct,
+  getAllProducts,
 };
