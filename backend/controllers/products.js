@@ -33,7 +33,33 @@ const getAllProducts = (req, res) => {
     });
 };
 
+
+const   deleteProductById = (req,res)=>{
+
+    const deleteById = req.params.id
+
+    productModel
+    .findByIdAndDelete({_id:deleteById})
+    .then((result)=>{
+    res.status(200).json({
+        success: true,
+        message: `Succeeded to delete product with id: ${deleteById}`
+    })
+    }).catch((err)=>{
+
+        res.status(404).json({
+            success:false,
+            message: `Failed to delete product with id: ${deleteById}`
+        })
+    })
+
+}
+
+
+
+
 module.exports = {
   createNewProduct,
   getAllProducts,
+  deleteProductById
 };
