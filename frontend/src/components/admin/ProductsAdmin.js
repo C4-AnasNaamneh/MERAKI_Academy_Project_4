@@ -27,6 +27,26 @@ const ProductsAdmin = ({token}) => {
       });
   };
 
+const deleteProductById = (id)=>{
+    axios
+    .post(`http://localhost:5000/products/${id}`)
+    .then((result)=>{
+        setMessage(result.data.message);
+        getAllProducts()
+    })
+    .catch((err)=>{
+        setMessage(err.response.data.message)
+    })
+
+}
+
+
+
+
+
+
+
+
   return (
     <>
       <p>ProductsAdmin</p>
@@ -39,6 +59,9 @@ const ProductsAdmin = ({token}) => {
             <p>{element.title}</p>
             <p>{element.description}</p>
             <p>{element.price}</p>
+            <button onClick={()=>{
+                deleteProductById(element._id)
+            }} >Remove</button>
             {message}
           </>
         ))}
