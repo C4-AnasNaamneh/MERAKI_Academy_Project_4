@@ -2,7 +2,16 @@ import React from "react";
 import {Routes,Route,Link} from "react-router-dom"
 
 
-const Navigation = ({isLoggedIn}) =>{
+const Navigation = ({isLoggedIn,setIsLoggedIn,setToken}) =>{
+
+
+const logout = ()=>{
+    setToken("")
+    setIsLoggedIn(false)
+
+}
+
+
 
 return (
 <>
@@ -15,6 +24,9 @@ return (
 <Link to="/newproduct">New Products</Link>
 
 <Link to="/cart">Cart</Link>
+
+
+<Link to="/login"><button onClick={logout}>Log Out</button></Link>
 </>
 
  ): (
