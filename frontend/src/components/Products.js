@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import axios from "axios";
 
-const Products = () => {
+const Products = ({ token }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
@@ -11,7 +11,15 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   const [message, setMessage] = useState("");
 
-  const getAllProducts = ({ token }) => {
+useEffect(()=>{
+
+getAllProducts()
+},[])
+
+
+
+
+  const getAllProducts = () => {
     axios
       .get("http://localhost:5000/products", {
         headers: {
@@ -32,7 +40,7 @@ const Products = () => {
   return (
     <>
       <p>Products</p>
-      <button onClick={getAllProducts}>GetAllProducts</button>
+      {/* <button onClick={getAllProducts}>GetAllProducts</button> */}
 
       {products && products.map((element)=>(
 <>
@@ -40,6 +48,8 @@ const Products = () => {
 <p>{element.title}</p>
 <p>{element.description}</p>
 <p>{element.price}</p>
+<br></br>
+<button >Add to Cart</button>
 </>
   ))
       
