@@ -12,10 +12,16 @@ const createNewProduct = (req, res) => {
   product
     .save()
     .then((result) => {
-      res.status(201).json(result);
+     res.status(201).json({
+       success:true,
+       message: "Product Added"
+     })
     })
     .catch((err) => {
-      res.status(404).json(err);
+      res.status(404).json({
+        success:false,
+        message: "Server Error"
+      });
     });
 };
 
