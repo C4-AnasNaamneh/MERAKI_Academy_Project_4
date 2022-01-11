@@ -1,11 +1,10 @@
 import react from "react";
 import axios from "axios";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const ProductsAdmin = ({token}) => {
-    const [products, setProducts] = useState([]);
-    const [message, setMessage] = useState("");
-
+const ProductsAdmin = ({ token }) => {
+  const [products, setProducts] = useState([]);
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     getAllProducts();
@@ -27,25 +26,34 @@ const ProductsAdmin = ({token}) => {
       });
   };
 
-const deleteProductById = (id)=>{
+  const deleteProductById = (id) => {
     axios
-    .post(`http://localhost:5000/products/${id}`)
-    .then((result)=>{
+      .post(`http://localhost:5000/products/${id}`)
+      .then((result) => {
+        setMessage(result.data.message);
+        getAllProducts();
+      })
+      .catch((err) => {
+        setMessage(err.response.data.message);
+      });
+  };
+
+  const updateProductById = (id) => {
+    axios
+      .put(`http://localhost:5000/products/${id}`, {
+        img,
+        title,
+        description,
+        price,
+      })
+      .then((result) => {
         setMessage(result.data.message);
         getAllProducts()
-    })
-    .catch((err)=>{
-        setMessage(err.response.data.message)
-    })
-
-}
-
-
-
-
-
-
-
+      })
+      .catch((err) => {
+          setMessage(err.response.data.message)
+      });
+  };
 
   return (
     <>
@@ -59,9 +67,16 @@ const deleteProductById = (id)=>{
             <p>{element.title}</p>
             <p>{element.description}</p>
             <p>{element.price}</p>
+            <button
+              onClick={() => {
+                deleteProductById(element._id);
+              }}
+            >
+              Remove
+            </button>
             <button onClick={()=>{
-                deleteProductById(element._id)
-            }} >Remove</button>
+                updateProductById(element._id)
+            }}></button>
             {message}
           </>
         ))}
