@@ -34,7 +34,7 @@ const ProductsAdmin = ({ token }) => {
 
   const deleteProductById = (id) => {
     axios
-      .post(`http://localhost:5000/products/${id}`)
+      .delete(`http://localhost:5000/products/${id}`)
       .then((result) => {
         setMessage(result.data.message);
         getAllProducts();
