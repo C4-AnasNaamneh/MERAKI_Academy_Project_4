@@ -7,20 +7,25 @@ import Login from "./components/Login";
 import Products from "./components/Products";
 
 import { useState } from "react";
-import NewProduct from "./components/admin/NewProduct"
+import NewProduct from "./components/admin/NewProduct";
 
 import ProductsAdmin from "./components/admin/ProductsAdmin";
 
 const App = () => {
   const [token, setToken] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const tokenstorge = localStorage.getItem("token");
 
   return (
     <>
       <div className="App">
         <h1>Welcome To App</h1>
 
-        <Navigation isLoggedIn={isLoggedIn} />
+        <Navigation
+          isLoggedIn={isLoggedIn}
+          setIsLoggedIn={setIsLoggedIn}
+          setToken={setToken}
+        />
 
         <Routes>
           <Route path="/register" element={<Register />} />
@@ -32,20 +37,14 @@ const App = () => {
             }
           />
 
-          <Route path="/products" element={<Products token={token} />} />
+          <Route path="/products" element={<Products token={tokenstorge} />} />
 
-          <Route path="/newproduct" element={<NewProduct token={token} />} />
+          <Route path="/newproduct" element={<NewProduct token={tokenstorge} />} />
 
-
-
-         <Route path="/adminproducts" element={<ProductsAdmin token={token} />} /> 
-
-
-
-          {/* <Route path="/cart" element={<P />} /> */}
-
-
-
+          <Route
+            path="/adminproducts"
+            element={<ProductsAdmin token={tokenstorge} />}
+          />
         </Routes>
       </div>
     </>
