@@ -6,7 +6,8 @@ const Navigation = ({ isLoggedIn, setIsLoggedIn, setToken }) => {
   const logout = () => {
     setToken("");
     setIsLoggedIn(false);
-  };
+    localStorage.removeItem('token');
+};
 
   return (
     <>
