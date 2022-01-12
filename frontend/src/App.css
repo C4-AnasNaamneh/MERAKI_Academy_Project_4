@@ -2,26 +2,123 @@
   text-align: center;
 }
 
+.homeBackground{
+  background-image: url("https://image.freepik.com/free-vector/isometric-online-shopping-concept-violet-background_88138-436.jpg");
 
-.register{
+}
+
+
+.register {
   display: grid;
-  gap: 20px
-  
+  gap: 20px;
+  height: 50px;
+  width: 220px;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.registerWord {
+  text-align: left;
 }
 
 .login {
-  
   display: grid;
-  gap: 20px
+  gap: 20px;
+  height: 50px;
+  width: 250px;
   
 }
 
+.loginWord {
+  text-align: left;
+}
 
 .navigation {
-
-  border: 3px solid blue ;
+  border: 3px solid blue;
   display: flex;
   gap: 25px;
 }
 
+.products {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  margin-top: 20px;
+}
 
+.productsImg {
+  height: 200px;
+  width: 200px;
+}
+
+.productsConatiner {
+  border: 3px solid;
+}
+
+.addToCartButton {
+  margin: 20px;
+}
+
+.adminProductsImg {
+  height: 200px;
+  width: 200px;
+}
+
+.adminProducts {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.adminProductsContainer {
+  border: 3px solid;
+}
+
+/* .updateImg{
+ 
+} */
+
+.updateTitle {
+  margin: 12px;
+  height: 20px;
+  
+}
+
+.updateDescription {
+  margin: 2px;
+  height: 20px;
+
+}
+
+.updatePrice{
+  margin: 10px;
+  height: 20px;
+
+
+}
+
+
+
+/* .deleteButton{
+
+} */
+
+.updateButton {
+  margin: 20px;
+}
+
+
+
+.newTitle{
+margin: 20px;
+}
+
+.newDescription{
+  width: auto;
+}
+
+.newPrice{
+  margin: 20px;
+ 
+}
