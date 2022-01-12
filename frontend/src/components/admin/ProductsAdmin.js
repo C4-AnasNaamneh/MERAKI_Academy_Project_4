@@ -16,6 +16,7 @@ const ProductsAdmin = ({ token }) => {
   }, []);
 
   const getAllProducts = () => {
+
     axios
       .get("http://localhost:5000/products", {
         headers: {
@@ -74,9 +75,10 @@ const ProductsAdmin = ({ token }) => {
             <p>{element.price}</p>
 
 
-<input type="image" placeholder="update image" onChange={(e)=>{
+ <input type="text" placeholder="update image" onChange={(e)=>{
     setImg(e.target.value)
-}}></input>
+}}></input> 
+
 
             <input
               type="text"
@@ -113,8 +115,8 @@ const ProductsAdmin = ({ token }) => {
               onClick={() => {
                 updateProductById(element._id);
               }}
-            ></button>
-            {message}
+            >Update </button>
+            {/* {message} */}
           </>
         ))}
     </>
