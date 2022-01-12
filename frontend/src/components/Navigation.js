@@ -1,24 +1,29 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
-const Navigation = ({ isLoggedIn, setIsLoggedIn, setToken }) => {
+const Navigation = ({ isLoggedIn, setIsLoggedIn, setToken, isAdmin }) => {
   const token = localStorage.getItem("token");
   const logout = () => {
     setToken("");
     setIsLoggedIn(false);
-    localStorage.removeItem('token');
-};
+    localStorage.removeItem("token");
+
+  };
 
   return (
     <>
       <div className="navigation">
         {token ? (
           <>
-            <Link to="/products">Products</Link>
+          
+           { isAdmin? <></> : <Link to="/products">Products</Link>}
 
-            <Link to="/newproduct">New Products</Link>
+            {isAdmin ? <Link to="/adminproducts">Admin Products</Link> : <></>}
 
-            <Link to="/cart">Cart</Link>
+            {isAdmin ? <Link to="/newproduct">New Products</Link> : <></>}
+
+            {isAdmin ? <></>: <Link to="/cart">Cart</Link>}
+
 
             <Link to="/login">
               <button onClick={logout}>Log Out</button>
