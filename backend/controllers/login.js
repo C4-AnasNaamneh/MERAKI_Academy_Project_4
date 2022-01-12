@@ -30,6 +30,7 @@ const login = (req, res) => {
             success: true,
             message: "Valid login",
             token: token,
+            role: result.role
           });
         } else {
           res.status(403).json({
