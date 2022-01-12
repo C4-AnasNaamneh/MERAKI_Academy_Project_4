@@ -15,6 +15,7 @@ const App = () => {
   const [token, setToken] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const tokenstorge = localStorage.getItem("token");
+  const [role,setRole] = useState("")
 
   return (
     <>
@@ -24,7 +25,7 @@ const App = () => {
         <Navigation
           isLoggedIn={isLoggedIn}
           setIsLoggedIn={setIsLoggedIn}
-          setToken={setToken}
+          setToken={setToken} role={role}
         />
 
         <Routes>
@@ -33,7 +34,7 @@ const App = () => {
           <Route
             path="/login"
             element={
-              <Login setToken={setToken} setIsLoggedIn={setIsLoggedIn} />
+              <Login setToken={setToken} setIsLoggedIn={setIsLoggedIn} setRole={setRole} />
             }
           />
 
