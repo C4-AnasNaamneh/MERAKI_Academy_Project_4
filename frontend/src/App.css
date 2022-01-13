@@ -2,11 +2,14 @@
   text-align: center;
 }
 
-.homeBackground{
-  background-image: url("https://image.freepik.com/free-vector/isometric-online-shopping-concept-violet-background_88138-436.jpg");
-
+.websiteName{
+  text-align: left;
 }
 
+
+.homeBackground {
+  background-image: url("https://image.freepik.com/free-vector/isometric-online-shopping-concept-violet-background_88138-436.jpg");
+}
 
 .register {
   display: grid;
@@ -26,7 +29,6 @@
   gap: 20px;
   height: 50px;
   width: 250px;
-  
 }
 
 .loginWord {
@@ -34,25 +36,55 @@
 }
 
 .navigation {
-  border: 3px solid blue;
   display: flex;
-  gap: 25px;
+  gap: 30px;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.productsLink{
+  text-decoration: none;
+}
+
+.adminProductsLink{
+  text-decoration: none;
+
+}
+
+.newProductsLink{
+  text-decoration: none;
+
+}
+
+.cartLink{
+  text-decoration: none;
+}
+
+
+.registerLink{
+  text-decoration: none;
+}
+
+.loginLink {
+  text-decoration: none;
+}
+
+
 .products {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
   gap: 60px;
   margin-top: 20px;
+  font-size: x-large;
 }
 
 .productsImg {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 250px;
 }
 
 .productsConatiner {
-  border: 3px solid;
+  border: 5px solid;
 }
 
 .addToCartButton {
@@ -65,10 +97,12 @@
 }
 
 .adminProducts {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
   gap: 60px;
   margin-top: 20px;
+  font-size: x-large;
+
 }
 
 .adminProductsContainer {
@@ -82,23 +116,17 @@
 .updateTitle {
   margin: 12px;
   height: 20px;
-  
 }
 
 .updateDescription {
   margin: 2px;
   height: 20px;
-
 }
 
-.updatePrice{
+.updatePrice {
   margin: 10px;
   height: 20px;
-
-
 }
-
-
 
 /* .deleteButton{
 
@@ -108,17 +136,14 @@
   margin: 20px;
 }
 
-
-
-.newTitle{
-margin: 20px;
+.newTitle {
+  margin: 20px;
 }
 
-.newDescription{
+.newDescription {
   width: auto;
 }
 
-.newPrice{
+.newPrice {
   margin: 20px;
- 
 }
