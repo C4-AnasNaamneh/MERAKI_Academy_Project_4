@@ -2,22 +2,23 @@ import React, { useEffect, useState } from "react";
 
 import axios from "axios";
 
+const localStorage = window.localStorage;
+
 const Products = ({ token }) => {
+  const [img, setImg] = useState("");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
-  const [img, setImg] = useState("");
 
   const [products, setProducts] = useState([]);
   const [message, setMessage] = useState("");
+  // let [cart, setCart] = useState([]);
 
-useEffect(()=>{
+  // let cart = [];
 
-getAllProducts()
-},[])
-
-
-
+  useEffect(() => {
+    getAllProducts();
+  }, []);
 
   const getAllProducts = () => {
     axios
@@ -27,36 +28,46 @@ getAllProducts()
         },
       })
       .then((result) => {
-        console.log(result);
-         setProducts(result.data);
+        setProducts(result.data);
       })
 
-      //لسا بشوف شو في بالداتا
       .catch((err) => {
         setMessage(err.response.data.message);
       });
   };
 
+  const AddToCart = (element) => {
+    const cart = JSON.parse(localStorage.getItem("CartArray")) || [];
+    cart.push(element);
+    localStorage.setItem("CartArray", JSON.stringify(cart));
+  };
+
   return (
     <>
-      <p>Products</p>
-      {/* <button onClick={getAllProducts}>GetAllProducts</button> */}
+      <div className="products">
+        <p>Products</p>
+        {/* <button onClick={getAllProducts}>GetAllProducts</button> */}
 
-      {products && products.map((element)=>(
-<>
-<img src={element.img}/>
-<p>{element.title}</p>
-<p>{element.description}</p>
-<p>{element.price}</p>
-<br></br>
-<button >Add to Cart</button>
-</>
-  ))
-      
-      
-      
-      
-      }
+        {products &&
+          products.map((element) => (
+            <>
+              <div key={element._id} className="productsConatiner">
+                <img src={element.img} className="productsImg" />
+                <p>{element.title}</p>
+                <p>{element.description}</p>
+                <p>{element.price}</p>
+                <button
+                  onClick={() => AddToCart(element)}
+                  className="addToCartButton"
+                >
+                  Add to Cart
+                </button>
+                <br></br>
+                {message}
+              </div>
+            </>
+          ))}
+      </div>
     </>
   );
 };
