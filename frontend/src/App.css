@@ -2,10 +2,9 @@
   text-align: center;
 }
 
-.websiteName{
+.websiteName {
   text-align: left;
 }
-
 
 .homeBackground {
   background-image: url("https://image.freepik.com/free-vector/isometric-online-shopping-concept-violet-background_88138-436.jpg");
@@ -14,14 +13,15 @@
 .register {
   display: grid;
   gap: 20px;
-  height: 50px;
-  width: 220px;
+  width: 300px;
   justify-content: center;
-  margin-left: 50px;
+
+  margin-left: 600px;
 }
 
 .registerWord {
   text-align: left;
+  font-size: x-large;
 }
 
 .login {
@@ -29,46 +29,52 @@
   gap: 20px;
   height: 50px;
   width: 250px;
+  margin-left: 580px;
 }
 
 .loginWord {
   text-align: left;
+  font-size: x-large;
 }
 
 .navigation {
   display: flex;
+  justify-content: flex-end;
   gap: 30px;
+  margin: 50px;
   font-size: x-large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.productsLink{
+.productsLink {
   text-decoration: none;
+  color: #151a99;
 }
 
-.adminProductsLink{
+.cartLink {
   text-decoration: none;
-
+  color: #151a99;
 }
 
-.newProductsLink{
+.adminProductsLink {
   text-decoration: none;
-
+  color: #151a99;
 }
 
-.cartLink{
+.newProductsLink {
   text-decoration: none;
+  color: #151a99;
 }
 
-
-.registerLink{
+.registerLink {
   text-decoration: none;
+  color: #151a99;
 }
 
 .loginLink {
   text-decoration: none;
+  color: #151a99;
 }
-
 
 .products {
   display: grid;
@@ -76,24 +82,49 @@
   gap: 60px;
   margin-top: 20px;
   font-size: x-large;
+  margin-left: 50px;
 }
 
 .productsImg {
   height: 300px;
   width: 250px;
+  border: 2px solid #1b1a40;
 }
 
 .productsConatiner {
   border: 5px solid;
+  background-color: #31ff66;
 }
 
+.productsTitle {
+  color: black;
+  font-size: xx-large;
+}
+
+.productsPrice {
+  font-size: xx-large;
+}
 .addToCartButton {
   margin: 20px;
+  height: 50px;
+  width: 50%;
+  font-size: large;
 }
 
+.deleteFromCartButton {
+  height: 30px;
+  width: 50px;
+  /* margin-bottom: 50px; */
+  position: relative;
+  bottom: 40px;
+}
+
+/* Admin */
+
 .adminProductsImg {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 250px;
+  border: 2px solid #1b1a40;
 }
 
 .adminProducts {
@@ -101,20 +132,20 @@
   grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
   gap: 60px;
   margin-top: 20px;
+  margin-left: 50px;
   font-size: x-large;
-
 }
 
 .adminProductsContainer {
   border: 3px solid;
 }
 
-/* .updateImg{
- 
-} */
+.updateImg {
+  height: 20px;
+}
 
 .updateTitle {
-  margin: 12px;
+  margin: 15px;
   height: 20px;
 }
 
@@ -124,20 +155,42 @@
 }
 
 .updatePrice {
-  margin: 10px;
+  margin: 8px;
   height: 20px;
 }
 
-/* .deleteButton{
-
-} */
+.deleteButton {
+  height: 30px;
+  font-size: large;
+  margin-left: 10px;
+}
 
 .updateButton {
   margin: 20px;
+  height: 30px;
+  font-size: large;
+  margin-right: 10px;
+}
+
+.newProduct{
+  font-size: x-large;
+  margin: 30px;
+
+}
+
+
+
+.newImg {
+  height: 20px;
+  height: 30px;
+
 }
 
 .newTitle {
   margin: 20px;
+  height: 20px;
+  height: 30px;
+
 }
 
 .newDescription {
@@ -145,5 +198,21 @@
 }
 
 .newPrice {
-  margin: 20px;
+  margin: 15px;
+  height: 20px;
+  height: 30px;
+
+}
+
+.addProductButton {
+  margin: 8px;
+  height: 40px;
+  width: 100px;
+  
+}
+
+.logoutButton{
+  height: 40px;
+width: 90px;
+font-size: large;
 }
