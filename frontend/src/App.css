@@ -3,12 +3,18 @@
 }
 
 .websiteName {
-  text-align: left;
+  /* text-align: left; */
+  font-size: small;
+  color: white;
+
 }
 
-.buyWord {
+/* .buyWord {
   color: #121cff;
-}
+  font-size: small;
+} */
+
+
 
 .register {
   display: grid;
@@ -48,56 +54,95 @@
   font-size: large;
 }
 
+
 .navigation {
   display: flex;
   justify-content: flex-end;
+  /* justify-content: space-between; */
   gap: 30px;
-  margin: 50px;
+  margin: -8px;
+  padding-right: 15px;
   font-size: x-large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  position: relative;
-  bottom: 100px;
+  /* position: relative; */
+  /* bottom: 100px; */
+  background-color: black;
+  /* margin-top: -30px; */
+  /* overflow: hidden; */
+  align-items: center;
 }
+
+
+
 
 .productsLink {
   text-decoration: none;
-  color: #151a99;
+  color: white
 }
+
+.productsLink:hover{
+  border: 2px solid;
+
+}
+
 
 .cartLink {
   text-decoration: none;
   color: #ff3327;
 }
 
+.cartLink:hover{
+  border: 2px solid;
+
+}
+
+
 .adminProductsLink {
   text-decoration: none;
-  color: #151a99;
+  color: white
+}
+
+.adminProductsLink:hover{
+  border: 2px solid;
+
 }
 
 .newProductsLink {
   text-decoration: none;
-  color: #151a99;
+  color: white
 }
 
-.homeLink {
-  text-decoration: none;
+.newProductsLink:hover{
+  border: 2px solid;
+
 }
 
 .registerLink {
   text-decoration: none;
-  color: #151a99;
+  color: white
+}
+
+.registerLink:hover{
+  border: 2px solid;
+
 }
 
 .loginLink {
   text-decoration: none;
-  color: #151a99;
+  color: white
 }
+
+.loginLink:hover{
+  border: 2px solid;
+
+}
+
 /* User */
 .products {
   display: grid;
   grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
   gap: 60px;
-  margin-top: 20px;
+  margin-top: 80px;
   font-size: x-large;
   margin-left: 50px;
 }
@@ -107,8 +152,6 @@
   width: 250px;
   border: 2px solid #1b1a40;
 }
-
-
 
 .productsConatiner {
   border: 5px solid;
@@ -154,7 +197,7 @@
   display: grid;
   grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
   gap: 60px;
-  margin-top: 20px;
+  margin-top: 80px;
   margin-left: 50px;
   font-size: x-large;
 }
