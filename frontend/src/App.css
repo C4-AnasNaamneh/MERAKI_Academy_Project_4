@@ -2,10 +2,18 @@
   text-align: center;
 }
 
+/* .loginNav{
+display:flex;
+flex-direction:row ;
+} */
+
 .websiteName {
   /* text-align: left; */
   font-size: small;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* .buyWord {
@@ -14,9 +22,13 @@
 } */
 
 .search {
+
   height: 20px;
 
   width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .searchButton{
@@ -144,8 +156,12 @@
 
 .navigation {
   display: flex;
-  justify-content: flex-end;
-  /* justify-content: space-between; */
+  /* justify-content: flex-end; */
+  flex-direction: row;
+  /* justify-content: space-evenly ; */
+  justify-content: space-around;
+    /* justify-content: space-between; */
+
   gap: 30px;
   margin: -8px;
   padding-right: 15px;
@@ -158,6 +174,15 @@
   /* overflow: hidden; */
   align-items: center;
 }
+
+.registerNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+
 
 .productsLink {
   text-decoration: none;
@@ -194,6 +219,13 @@
 .newProductsLink:hover {
   border: 2px solid;
 }
+
+.ordersLink{
+  text-decoration: none;
+  color: white;
+}
+
+
 
 .registerLink {
   text-decoration: none;
@@ -353,3 +385,5 @@
   width: 60px;
   font-size: large;
 }
+
+
