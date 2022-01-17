@@ -1,3 +1,10 @@
+body {
+  background-color: #97AEFF;
+}
+
+
+
+
 .App {
   text-align: center;
 }
@@ -16,10 +23,13 @@ flex-direction:row ;
   justify-content: space-evenly;
 }
 
-/* .buyWord {
-  color: #121cff;
-  font-size: small;
-} */
+
+
+.searchDiv{
+  display: flex;
+  flex-direction: row;
+}
+
 
 .search {
 
@@ -34,6 +44,7 @@ flex-direction:row ;
 .searchButton{
   /* background-color: ; */
   height: 26px;
+  
   
 }
 
@@ -82,7 +93,7 @@ flex-direction:row ;
 }
 
 .registerButton {
-  background-color: #00adab;
+  background-color:#3328FF ; 
   height: 30px;
   font-size: large;
   margin-top: 10px;
@@ -147,7 +158,9 @@ flex-direction:row ;
 }
 
 .loginButton {
-  background-color: #00adab;
+  /* background-color: #00adab; */
+     background-color:#3328FF ; 
+
   height: 30px;
   font-size: large;
   margin-top: 10px;
@@ -253,17 +266,21 @@ flex-direction:row ;
   margin-top: 80px;
   font-size: x-large;
   margin-left: 50px;
+
 }
 
 .productsImg {
   height: 300px;
   width: 250px;
   border: 2px solid #1b1a40;
+
 }
 
 .productsConatiner {
   border: 5px solid;
-  background-color: #31ff66;
+  /* background-color: #31ff66; */
+  background-color:#06c0e0 ; 
+
 }
 
 .productsTitle {
