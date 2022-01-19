@@ -8,6 +8,8 @@ const AddToCart = ({ token, setCheck }) => {
   const [user_id, setUser_id] = useState("");
   let [totalPrice, setTotalPrice] = useState(0);
 
+
+  
   store = JSON.parse(localStorage.getItem("CartArray"));
   const deleteProduct = (id) => {
     const cartFilter = store.filter((item) => item._id !== id);
@@ -57,10 +59,23 @@ const AddToCart = ({ token, setCheck }) => {
 
   return (
     <>
+
       <div className="products">
         {/* <p>Cart</p> */}
+<div className="orderSummary">
+<p>Order Summary</p>
+<p>Total Price = {totalPrice}$</p>
 
-        <button onClick={checkOut}>Checkout</button>
+<button onClick={checkOut} className="checkoutButton">Checkout</button>
+
+</div>
+
+
+
+
+      
+
+
 
         {store.map((element) => (
           <>
