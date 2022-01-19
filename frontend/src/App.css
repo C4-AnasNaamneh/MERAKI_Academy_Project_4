@@ -1,18 +1,10 @@
 body {
-  background-color: #97AEFF;
+  background-color: #bcc2c1;
 }
-
-
-
 
 .App {
   text-align: center;
 }
-
-/* .loginNav{
-display:flex;
-flex-direction:row ;
-} */
 
 .websiteName {
   /* text-align: left; */
@@ -23,16 +15,12 @@ flex-direction:row ;
   justify-content: space-evenly;
 }
 
-
-
-.searchDiv{
+.searchDiv {
   display: flex;
   flex-direction: row;
 }
 
-
 .search {
-
   height: 20px;
 
   width: 300px;
@@ -41,13 +29,10 @@ flex-direction:row ;
   justify-content: space-evenly;
 }
 
-.searchButton{
+.searchButton {
   /* background-color: ; */
   height: 26px;
-  
-  
 }
-
 
 .register {
   display: grid;
@@ -57,32 +42,31 @@ flex-direction:row ;
   margin-bottom: 200px;
 }
 
-
-.firstName{
+.firstName {
   height: 25px;
   font-size: large;
 }
 
-.lastName{
+.lastName {
   height: 25px;
   font-size: large;
 }
 
-.age{
+.age {
   height: 25px;
   font-size: large;
 }
-.country{
-  height: 25px;
-  font-size: large;
-}
-
-.registerEmail{
+.country {
   height: 25px;
   font-size: large;
 }
 
-.registerPassword{
+.registerEmail {
+  height: 25px;
+  font-size: large;
+}
+
+.registerPassword {
   height: 25px;
   font-size: large;
 }
@@ -93,24 +77,23 @@ flex-direction:row ;
 }
 
 .registerButton {
-  background-color:#3328FF ; 
+  background-color: #3328ff;
   height: 30px;
   font-size: large;
   margin-top: 10px;
 }
 
-
-.firstLabel{
+.firstLabel {
   font-size: larger;
   display: flex;
 }
 
-.lastLabel{
+.lastLabel {
   font-size: larger;
   display: flex;
 }
 
-.ageLabel{
+.ageLabel {
   font-size: larger;
   display: flex;
 }
@@ -128,29 +111,25 @@ flex-direction:row ;
   margin-left: 580px;
 }
 
-.loginEmail{
+.loginEmail {
   height: 25px;
   font-size: large;
 }
 
-.loginPassword{
+.loginPassword {
   height: 25px;
   font-size: large;
-
 }
 
-
-.emailLabel{
+.emailLabel {
   font-size: larger;
   display: flex;
 }
 
-.passwordLabel{
+.passwordLabel {
   font-size: larger;
   display: flex;
-
 }
-
 
 .loginWord {
   text-align: left;
@@ -159,12 +138,11 @@ flex-direction:row ;
 
 .loginButton {
   /* background-color: #00adab; */
-     background-color:#3328FF ; 
+  background-color: #3328ff;
 
   height: 30px;
   font-size: large;
   margin-top: 10px;
-
 }
 
 .navigation {
@@ -173,12 +151,12 @@ flex-direction:row ;
   flex-direction: row;
   /* justify-content: space-evenly ; */
   justify-content: space-around;
-    /* justify-content: space-between; */
+  /* justify-content: space-between; */
 
   gap: 30px;
   margin: -8px;
   padding-right: 15px;
-  font-size: x-large;
+  font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* position: relative; */
   /* bottom: 100px; */
@@ -188,14 +166,11 @@ flex-direction:row ;
   align-items: center;
 }
 
-.registerNav{
+.registerNav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-
-
-
 
 .productsLink {
   text-decoration: none;
@@ -218,6 +193,7 @@ flex-direction:row ;
 .adminProductsLink {
   text-decoration: none;
   color: white;
+  font-size: large;
 }
 
 .adminProductsLink:hover {
@@ -227,18 +203,18 @@ flex-direction:row ;
 .newProductsLink {
   text-decoration: none;
   color: white;
+  font-size: large;
 }
 
 .newProductsLink:hover {
   border: 2px solid;
 }
 
-.ordersLink{
+.ordersLink {
   text-decoration: none;
   color: white;
+  font-size: large;
 }
-
-
 
 .registerLink {
   text-decoration: none;
@@ -266,22 +242,23 @@ flex-direction:row ;
   margin-top: 80px;
   font-size: x-large;
   margin-left: 50px;
-
 }
 
 .productsImg {
-  height: 300px;
+  height: 240px;
   width: 250px;
   border: 2px solid #1b1a40;
-
 }
 
 .productsConatiner {
   border: 5px solid;
   /* background-color: #31ff66; */
-  background-color:#06c0e0 ; 
-
+  background-color: #066661;
 }
+
+/* .ppp{
+  height: 280px;
+} */
 
 .productsTitle {
   color: black;
@@ -292,11 +269,25 @@ flex-direction:row ;
   font-size: xx-large;
 }
 .addToCartButton {
-  margin: 20px;
+  margin-bottom: 40px;
   height: 50px;
   width: 35%;
   font-size: large;
 }
+
+
+.checkoutButton {
+  height: 40px;
+  width: 100px;
+  font-size: large;
+  margin: 225px 80px;
+}
+
+.checkoutButton:active{
+  background-color: #00FF33
+
+}
+
 
 .addToCartButton:active {
   background-color: #ff3327;
@@ -397,10 +388,20 @@ flex-direction:row ;
   width: 60px;
 }
 
+.orders {
+  margin-top: 50px;
+  /* border: 5px solid */
+}
+
+.ordersContainer {
+  display: grid;
+  border: 3px solid;
+  font-weight: bold;
+  font-size: larger;
+}
+
 .logoutButton {
   height: 40px;
   width: 60px;
   font-size: large;
 }
-
-
