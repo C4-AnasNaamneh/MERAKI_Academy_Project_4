@@ -1,5 +1,5 @@
 body {
-  background-color: #bcc2c1;
+  /* background-color: ; */
 }
 
 .App {
@@ -13,6 +13,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.websiteName:hover {
+  cursor: pointer;
+  border: 2px solid;
 }
 
 .searchDiv {
@@ -32,6 +37,10 @@ body {
 .searchButton {
   /* background-color: ; */
   height: 26px;
+}
+
+.searchButton:hover {
+  cursor: pointer;
 }
 
 .register {
@@ -183,7 +192,7 @@ body {
 
 .cartLink {
   text-decoration: none;
-  color: #ff3327;
+  color: white;
 }
 
 .cartLink:hover {
@@ -214,6 +223,10 @@ body {
   text-decoration: none;
   color: white;
   font-size: large;
+}
+
+.ordersLink:hover {
+  border: 2px solid;
 }
 
 .registerLink {
@@ -275,19 +288,33 @@ body {
   font-size: large;
 }
 
+.addToCartButton:hover {
+  cursor: pointer;
+}
+
+.orderSummary {
+  border: 5px solid;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
 
 .checkoutButton {
   height: 40px;
   width: 100px;
   font-size: large;
-  margin: 225px 80px;
+  margin-bottom: 100px;
+  background-color: black;
+  color: white;
 }
 
-.checkoutButton:active{
-  background-color: #00FF33
-
+.checkoutButton:hover {
+  cursor: pointer;
 }
 
+.checkoutButton:active {
+  background-color: #00ff33;
+}
 
 .addToCartButton:active {
   background-color: #ff3327;
@@ -299,6 +326,11 @@ body {
   /* margin-bottom: 50px; */
   position: relative;
   bottom: 40px;
+  font-size: large;
+}
+
+.deleteFromCartButton:hover {
+  cursor: pointer;
 }
 
 /* Admin */
@@ -348,12 +380,20 @@ body {
   color: red;
 }
 
+.deleteButton:hover {
+  cursor: pointer;
+}
+
 .updateButton {
   margin: 20px;
   height: 30px;
   font-size: large;
   margin-right: 10px;
   color: rgb(0, 0, 255);
+}
+
+.updateButton:hover {
+  cursor: pointer;
 }
 
 .newProduct {
@@ -404,4 +444,8 @@ body {
   height: 40px;
   width: 60px;
   font-size: large;
+}
+
+.logoutButton:hover {
+  cursor: pointer;
 }
