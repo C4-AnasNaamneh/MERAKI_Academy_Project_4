@@ -13,6 +13,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+
 }
 
 .websiteName:hover {
@@ -38,6 +40,9 @@ body {
   /* background-color: ; */
   height: 26px;
 }
+
+
+
 
 .searchButton:hover {
   cursor: pointer;
@@ -266,7 +271,7 @@ body {
 .productsConatiner {
   border: 5px solid;
   /* background-color: #31ff66; */
-  background-color: #066661;
+  /* background-color: #066661; */
 }
 
 /* .ppp{
@@ -449,3 +454,5 @@ body {
 .logoutButton:hover {
   cursor: pointer;
 }
+
+
