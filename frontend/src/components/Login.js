@@ -18,9 +18,17 @@ const Login = ({ setToken, setIsLoggedIn, setIsAdmin }) => {
   return (
     <>
       <div className="login">
+        {/* <img
+          src="https://drive.google.com/uc?id=1O_hDUSGaGcdL-gi_VUBEoWSX8nQQW15N"
+          alt="image"
+        /> */}
+
         <p className="loginWord">Login</p>
 
-<label for="email" className="emailLabel"> Email</label>
+        <label for="email" className="emailLabel">
+          {" "}
+          Email
+        </label>
         <input
           type="email"
           placeholder="Email address"
@@ -30,7 +38,9 @@ const Login = ({ setToken, setIsLoggedIn, setIsAdmin }) => {
           className="loginEmail"
         ></input>
 
-<label for="password" className="passwordLabel">Password</label>
+        <label for="password" className="passwordLabel">
+          Password
+        </label>
 
         <input
           type="password"
@@ -70,7 +80,12 @@ const Login = ({ setToken, setIsLoggedIn, setIsAdmin }) => {
         </button>
       </div>
 
-
+<div className="imageGif">
+      <img
+        src="https://drive.google.com/uc?id=1IWCez46wuaGc5jJr29Fqs1HLAEkoM1iy"
+        alt="image"
+      />
+      </div>
     </>
   );
 };
