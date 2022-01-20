@@ -9,18 +9,19 @@ const {
 
 const { authentication } = require("../middleware/authentication");
 
-const {authorization} = require("../middleware/authorization")
-
-
+const { authorization } = require("../middleware/authorization");
 
 const productsRouter = express.Router();
 
+productsRouter.post(
+  "/products",
+  authentication,
+  authorization,
+  createNewProduct
+);
 
-productsRouter.post("/products",authentication,authorization,createNewProduct)
-
-productsRouter.get("/products", getAllProducts);
+productsRouter.get("/products", authentication, getAllProducts);
 productsRouter.delete("/products/:id", deleteProductById);
 productsRouter.put("/products/:id", updateProductById);
-
 
 module.exports = productsRouter;
