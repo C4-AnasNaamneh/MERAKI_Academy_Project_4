@@ -4,7 +4,7 @@ import { useState } from "react";
 const NewProduct = ({ token }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [price, setPrice] = useState("");
+  const [price, setPrice] = useState(0);
   const [img, setImg] = useState("");
 
   const [message, setMessage] = useState("");
@@ -19,6 +19,7 @@ const NewProduct = ({ token }) => {
         },
       })
       .then((result) => {
+        console.log(result);
         setMessage(result.data.message);
       })
       .catch((err) => {
@@ -28,12 +29,12 @@ const NewProduct = ({ token }) => {
 
   return (
     <>
-      <p>New Product</p>
+      <p className="newProduct">New Product</p>
 
 
       <input
-        typr="text"
-        placeholder="image"
+        type="text"
+        placeholder="image" className="newImg"
         onChange={(e) => {
           setImg(e.target.value)
         }}
@@ -45,7 +46,7 @@ const NewProduct = ({ token }) => {
         placeholder="Title"
         onChange={(e) => {
           setTitle(e.target.value);
-        }}
+        }} className="newTitle"
       ></input>
       <br></br>
       <textarea
@@ -53,7 +54,7 @@ const NewProduct = ({ token }) => {
         placeholder="Description"
         onChange={(e) => {
           setDescription(e.target.value);
-        }}
+        }} className="newDescription"
       ></textarea>
       <br></br>
       <input
@@ -61,11 +62,16 @@ const NewProduct = ({ token }) => {
         placeholder="Price"
         onChange={(e) => {
           setPrice(e.target.value);
-        }}
+        }} className="newPrice"
       ></input>
 
       <br></br>
-      <button onClick={createNewProduct}>Add Product</button>
+      <button onClick={createNewProduct} className="addProductButton">
+      <i class="fas fa-plus"></i>
+
+
+
+        </button>
       {message}
     </>
   );
