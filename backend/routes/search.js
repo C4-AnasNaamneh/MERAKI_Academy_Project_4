@@ -1,11 +1,11 @@
 const express = require("express");
 
-const { createSearch } = require("../controllers/search");
+const { getSearchByTitle } = require("../controllers/search");
 
 const searchRouter = express.Router();
 
 
-searchRouter.post("/search",createSearch);
+searchRouter.post("/search",getSearchByTitle);
 
 
 module.exports = searchRouter;
