@@ -2,7 +2,6 @@
 
 
 const authorization = (req, res, next) => {
-    console.log(req.token.role);
 
     if (req.token.role == "admin") {
      next();
