@@ -8,7 +8,8 @@
 }
 
 .homeLink:hover {
-  background-color: rgba(128, 128, 128, 0.281);
+  /* background-color: rgba(128, 128, 128, 0.281); */
+  background-color: #1B5977;
 }
 
 .homeImg {
@@ -72,8 +73,11 @@
   display: grid;
   gap: 5px;
   width: 300px;
-  margin-left: 600px;
-  margin-bottom: 200px;
+  /* margin-left: 600px; */
+  /* margin-bottom: 200px; */
+  margin-top: 20px;
+  margin-left: 300px;
+
 }
 
 .firstName {
@@ -111,11 +115,21 @@
 }
 
 .registerButton {
-  background-color: #3328ff;
+  background-color: #A56663;
   height: 30px;
   font-size: large;
   margin-top: 10px;
 }
+
+.registerImageGif{
+  position: relative;
+  /* bottom: 200px; */
+  bottom: 470px;
+  left: 380px
+
+}
+
+
 
 .firstLabel {
   font-size: larger;
@@ -180,7 +194,11 @@
   margin-top: 10px;
 }
 
-.imageGif{
+
+
+
+
+.loginImageGif{
   position: relative;
   bottom: 140px;
   left: 420px
@@ -222,7 +240,9 @@
 
 .productsLink:hover {
   /* border: 2px solid; */
-  background-color: rgba(128, 128, 128, 0.281);
+  /* background-color: rgba(128, 128, 128, 0.281); */
+  background-color: #1B5977
+
 }
 
 .cartLink {
@@ -232,7 +252,9 @@
 
 .cartLink:hover {
   /* border: 2px solid; */
-  background-color: rgba(128, 128, 128, 0.281);
+  /* background-color: rgba(128, 128, 128, 0.281); */
+  background-color: #1B5977
+
 }
 
 .adminProductsLink {
@@ -243,7 +265,9 @@
 
 .adminProductsLink:hover {
   /* border: 2px solid; */
-  background-color: rgba(128, 128, 128, 0.281);
+  /* background-color: rgba(128, 128, 128, 0.281); */
+  background-color: #1B5977
+
 }
 
 .newProductsLink {
@@ -254,7 +278,9 @@
 
 .newProductsLink:hover {
   /* border: 2px solid; */
-  background-color: rgba(128, 128, 128, 0.281);
+  /* background-color: rgba(128, 128, 128, 0.281); */
+  background-color: #1B5977
+
 }
 
 .ordersLink {
@@ -265,7 +291,9 @@
 
 .ordersLink:hover {
   /* border: 2px solid; */
-  background-color: rgba(128, 128, 128, 0.281);
+  /* background-color: rgba(128, 128, 128, 0.281); */
+  background-color: #1B5977
+
 }
 
 .registerLink {
@@ -317,10 +345,21 @@
 .productsTitle {
   color: black;
   font-size: xx-large;
+  font-family: 'Neonderthaw', cursive;
+
 }
+
+.productsDescription {
+
+  font-family: 'Neonderthaw', cursive;
+
+}
+
 
 .productsPrice {
   font-size: xx-large;
+  font-family: 'Neonderthaw', cursive;
+
 }
 .addToCartButton {
   margin-bottom: 40px;
@@ -338,6 +377,7 @@
   height: 200px;
   width: 200px;
   background-color: white;
+  font-family: 'Neonderthaw', cursive;
 }
 
 .checkoutButton {
@@ -389,6 +429,7 @@
   margin-top: 80px;
   margin-left: 50px;
   font-size: x-large;
+
 }
 
 .adminProductsContainer {
@@ -472,13 +513,18 @@
 .orders {
   margin-top: 50px;
   /* border: 5px solid */
+  /* display: grid; */
+
+  /* float: left; */
+  /* gap: 20px; */
 }
 
 .ordersContainer {
-  display: grid;
-  border: 3px solid;
   font-weight: bold;
-  font-size: larger;
+  font-size: x-large;
+  border: 1px solid;
+  font-family: cursive;
+
 }
 
 .logoutButton {
