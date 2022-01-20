@@ -19,7 +19,7 @@ body {
 
 .websiteName:hover {
   cursor: pointer;
-  border: 2px solid;
+  /* border: 1px solid; */
 }
 
 .searchDiv {
@@ -192,7 +192,9 @@ body {
 }
 
 .productsLink:hover {
-  border: 2px solid;
+  /* border: 2px solid; */
+  background-color: rgba(128, 128, 128, 0.281);
+
 }
 
 .cartLink {
@@ -201,7 +203,9 @@ body {
 }
 
 .cartLink:hover {
-  border: 2px solid;
+  /* border: 2px solid; */
+  background-color: rgba(128, 128, 128, 0.281);
+
 }
 
 .adminProductsLink {
@@ -211,17 +215,22 @@ body {
 }
 
 .adminProductsLink:hover {
-  border: 2px solid;
+  /* border: 2px solid; */
+  background-color: rgba(128, 128, 128, 0.281);
+
 }
 
 .newProductsLink {
   text-decoration: none;
   color: white;
   font-size: large;
+  
 }
 
 .newProductsLink:hover {
-  border: 2px solid;
+  /* border: 2px solid; */
+  background-color: rgba(128, 128, 128, 0.281);
+
 }
 
 .ordersLink {
@@ -231,7 +240,9 @@ body {
 }
 
 .ordersLink:hover {
-  border: 2px solid;
+  /* border: 2px solid; */
+  background-color: rgba(128, 128, 128, 0.281);
+
 }
 
 .registerLink {
@@ -265,11 +276,11 @@ body {
 .productsImg {
   height: 240px;
   width: 250px;
-  border: 2px solid #1b1a40;
+  /* border: 2px solid #1b1a40; */
 }
 
 .productsConatiner {
-  border: 5px solid;
+  /* border: 5px solid; */
   /* background-color: #31ff66; */
   /* background-color: #066661; */
 }
@@ -343,7 +354,7 @@ body {
 .adminProductsImg {
   height: 300px;
   width: 250px;
-  border: 2px solid #1b1a40;
+  /* border: 2px solid #1b1a40; */
 }
 
 .adminProducts {
@@ -356,7 +367,7 @@ body {
 }
 
 .adminProductsContainer {
-  border: 3px solid;
+  /* border: 3px solid; */
 }
 
 .updateImg {
