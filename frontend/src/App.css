@@ -16,13 +16,12 @@
   /* background-image: url("https://www.nicepng.com/png/detail/255-2559542_ecommorce-e-commerce-background-png.png"); */
 
   margin-top: 8px;
-  /* margin-left: -3px; */
 
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .about {
-  font-size: xx-large;
+  font-size: x-large;
   border: 5px solid;
   border-radius: 10px;
   background-color: black;
@@ -31,12 +30,7 @@
 
 .aboutParagraph {
   font-size: larger;
-
 }
-
-
-
-
 
 .websiteName {
   /* text-align: left; */
@@ -162,8 +156,6 @@
   width: 250px;
   margin-top: 100px;
   margin-left: 300px;
-  
-
 }
 
 .loginEmail {
@@ -499,6 +491,12 @@
   width: 60px;
 }
 
+.addProductButton:hover {
+cursor: pointer;
+}
+
+
+
 .orders {
   margin-top: 50px;
   /* border: 5px solid */
@@ -521,7 +519,6 @@
   text-align: left;
   justify-content: space-between; */
   background-color: #1b5977;
-
 }
 
 .logoutButton {
@@ -532,4 +529,22 @@
 
 .logoutButton:hover {
   cursor: pointer;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: larger;
+  font-family: 'Neonderthaw', cursive;
+
+}
+
+.copyRights{
+  font-size: large;
+  display: grid;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
 }
