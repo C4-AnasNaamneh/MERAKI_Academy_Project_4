@@ -10,9 +10,6 @@ const Orders = ({ check, token }) => {
 
   console.log(orders);
 
-
-
-
   useEffect(() => {
     getAllOrders();
   }, []);
@@ -26,7 +23,7 @@ const Orders = ({ check, token }) => {
       })
       .then((result) => {
         setOrders(result.data);
-        //console.log(result.data);
+        console.log(result.data);
       })
       .catch((err) => {
         setMessage(err.response);
@@ -35,18 +32,26 @@ const Orders = ({ check, token }) => {
 
   return (
     <>
-      {orders &&
-        orders.map((element) => {
-          console.log("element",element);
-          console.log("element",element._id);
-        return   <div key={element._id} className="productsConatiner">
-             <p>{element.product_id.title}</p>
-            <p>{element.user_id.firstName}</p>
-            <p>{element.totalPrice}</p>
-          </div>;
-        })}
+      <div className="orders">
+        {orders &&
+          orders.map((element, i) => {
+            console.log("element", element);
+            console.log("element", element._id);
+            return (
+              <div key={i} className="ordersContainer">
+               { console.log(element.product_id)}
+                {/* <p>{element.product_id}</p> */}
+                <p>{element.user_id.firstName}</p>
+                <p>{element.user_id.lastName}</p>
+                <p>{element.user_id.email}</p>
 
-      <button onClick={getAllOrders}>GetAllOrders</button>
+                <p>{element.totalPrice}$</p>
+              </div>
+            );
+          })}
+
+        {/* <button onClick={getAllOrders}>GetAllOrders</button> */}
+      </div>
     </>
   );
 };
