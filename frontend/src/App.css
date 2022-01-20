@@ -16,20 +16,24 @@
   /* background-image: url("https://www.nicepng.com/png/detail/255-2559542_ecommorce-e-commerce-background-png.png"); */
 
   margin-top: 8px;
-
+background-color: #F6F6F6;
   /* background-repeat: no-repeat; */
-}
-
-.about {
-  font-size: x-large;
-  border: 5px solid;
-  border-radius: 10px;
-  background-color: black;
-  color: white;
 }
 
 .aboutParagraph {
   font-size: larger;
+}
+
+.about {
+  font-size: x-large;
+  background-color: rgba(0, 0, 0, 0.911);
+  color: white;
+  display: flex;
+  flex-direction: center;
+}
+
+.aboutTitle {
+  font-size: xx-large;
 }
 
 .websiteName {
@@ -79,35 +83,42 @@
   /* margin-bottom: 200px; */
   margin-top: 20px;
   margin-left: 300px;
+  font-family: "Neonderthaw", cursive;
 }
 
 .firstName {
   height: 25px;
   font-size: large;
+  font-family: "Neonderthaw", cursive;
 }
 
 .lastName {
   height: 25px;
   font-size: large;
+  font-family: "Neonderthaw", cursive;
 }
 
 .age {
   height: 25px;
   font-size: large;
+  font-family: "Neonderthaw", cursive;
 }
 .country {
   height: 25px;
   font-size: large;
+  font-family: "Neonderthaw", cursive;
 }
 
 .registerEmail {
   height: 25px;
   font-size: large;
+  font-family: "Neonderthaw", cursive;
 }
 
 .registerPassword {
   height: 25px;
   font-size: large;
+  font-family: "Neonderthaw", cursive;
 }
 
 .registerWord {
@@ -117,9 +128,10 @@
 
 .registerButton {
   background-color: #a56663;
-  height: 30px;
+  height: 33px;
   font-size: large;
   margin-top: 10px;
+  font-family: "Neonderthaw", cursive;
 }
 
 .registerImageGif {
@@ -156,16 +168,19 @@
   width: 250px;
   margin-top: 100px;
   margin-left: 300px;
+  font-family: "Neonderthaw", cursive;
 }
 
 .loginEmail {
   height: 25px;
   font-size: large;
+  font-family: "Neonderthaw", cursive;
 }
 
 .loginPassword {
   height: 25px;
   font-size: large;
+  font-family: "Neonderthaw", cursive;
 }
 
 .emailLabel {
@@ -187,9 +202,12 @@
   /* background-color: #00adab; */
   background-color: #1b5977;
 
-  height: 30px;
+  height: 31px;
   font-size: large;
   margin-top: 10px;
+  font-family: "Neonderthaw", cursive;
+  display: flex;
+  justify-content: center;
 }
 
 .loginImageGif {
@@ -492,10 +510,8 @@
 }
 
 .addProductButton:hover {
-cursor: pointer;
+  cursor: pointer;
 }
-
-
 
 .orders {
   margin-top: 50px;
@@ -531,22 +547,27 @@ cursor: pointer;
   cursor: pointer;
 }
 
-.footer{
+.footer {
   display: grid;
-grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
-justify-content: space-evenly;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr;
+  justify-content: space-around;
   font-size: larger;
-  font-family: 'Neonderthaw', cursive;
+  font-family: "Neonderthaw", cursive;
   text-align: left;
-  margin-left: 30px;
-
+  /* margin-left: 30px; */
+  background-color: rgba(0, 0, 0, 0.911);
 }
 
-.copyRights{
+.aTag {
+  color: white;
+  text-decoration: none;
+}
+
+.copyRights {
   font-size: large;
   display: grid;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.911);
   color: white;
 }
