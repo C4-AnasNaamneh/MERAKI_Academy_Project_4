@@ -10,13 +10,13 @@
  ## 📝 Table of Contents
  
  - [About](#about)
+ - [Built Using](#built_using)
  -  [User Story](#user_story)
- - Data Model](#data_model)
+ - [Data Model](#data_model)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
-- [Built Using](#built_using)
 - [Author](#author)
-
+- [Acknowlegments](#acknowlegments)
 - [Guided By](#guided_by)
 
 
@@ -30,69 +30,6 @@
  we ensure the customers high quality service ,fast delivery and the best products in very reasonable prices,we accept customer's opinions as the customer's satisfaction are our main priority.
     <br> 
 </p>
- 
- 
-
-
-
-
- ##  User Story <a name = "#user_story"></a>
- 
- 
- https://trello.com/b/umnyXcxS/project-4
- 
- 
- ## Data Model <a name = "data_model"></a>
-
- 
- mongoDB 
- 
- 
-## 🏁 Getting Started <a name = "getting_started"></a>
-  clone Repostiory
-  npm init -y to view package json
- npm i in backend to install packages 
- npm i in frontend to install packages
- npm i axios in frontend
- npm run dev to turn server on
- npm start to run frontend
- 
- 
- for example 
- 
- on postman we create a POST reguest to api with the email and password that brought from body
- and api send request to database then database send response with email and password then api will send the response of the required data to the client
- 
- Hint:
- http://localhost:5000/login
- 
- body:
- 
- "email":naamnih.anas@gmail.com
- "password": 12345
- 
- result of post request emai and password
- 
- email:naamnih.anas@gmail.com
- password: 12345
-  
- 
- 
- Extra features 
- Orders Schema
-Admin show orders
- 
- ## Author <a name = "author"></a>
- Anas Naamneh
- 
- ## Acknowlegments <a name = "author"></a>
- 
- Mohammad Farhan
- Bayan Alsafadi
- Ghadiaa Tabikh
- Mai Shagarain
- 
- ## 🎈 Usage <a name="usage"></a>
 
 
  ## ⛏️ Built Using <a name = "built_using"></a>
@@ -102,6 +39,107 @@ Admin show orders
 - [React JS](https://https://reactjs.org/) - Web Framework
 - [Node JS](https://nodejs.org/en/) - Server Environment
 - axios package
+ 
+ 
+ ##  User Story <a name = "#user_story"></a>
+ 
+ 
+Trello : https://trello.com/b/umnyXcxS/project-4
+ 
+ 
+ ## Data Model <a name = "data_model"></a>
+
+ 
+ mongoDB 
+ 
+ 
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+clone Repostiory to your local machine
+ 
+```
+ https://github.com/C4-AnasNaamneh/MERAKI_Academy_Project_4
+ ``` 
+ 
+ then use visuale studio to install packages
+ 
+  ``` 
+ `npm i`
+  npm i axios in frontend
+
+ ``` 
+
+install mongoDB
+ ``` 
+ mongoDB Database
+ ``` 
+
+then in backend gitbash
+ ``` 
+ npm run dev
+ ``` 
+
+in front end git bash
+  ``` 
+  npm start
+ ``` 
+
+ 
+### Installing
+
+A step by step series of examples that tell you how to get a development env running.
+
+Say what the step will be
+
+```
+
+if package json isn't present 
+
+```
+  npm init -y to view package json
+```
+
+
+ 
+ 
+ ## 🎈 Usage <a name="usage"></a>
+
+
+ -POST request to /users route 
+ ```
+ input: 
+ 
+ "firstName": Anas
+ "latName": Naamneh
+ "age": 25
+ "country": Jordan
+ "email": naamnih.anas@gmail.com
+ "password": "12345"
+ "role": "admin"
+ 
+ 
+ output:
+ 
+  firstname: Anas
+ latname: Naamneh
+ age: 25
+ country: Jordan
+ email: naamnih.anas@gmail.com
+ password: "12345"
+ role: "admin"
+  ```
+
+ ## Author <a name = "author"></a>
+
+-Anas Naamneh
+
+ ## Acknowlegments <a name = "acknowlegments"></a>
+ <p>
+ Mohammad Farhan
+ Bayan Alsafadi
+ Ghadiaa Tabikh
+ Mai Shagarain
+    </p>
 
 
 
