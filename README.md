@@ -1,14 +1,22 @@
 # MERAKI_Academy_Project_4
 
 
-<h3 align="center"> Project (E-Buy)</h3>
+<h3 align="center">E-Buy</h3>
 
+
+<p align="center"> E-commerce website allows people to buy products over the internet
+    <br> 
+</p>
  ## 📝 Table of Contents
  
  - [About](#about)
+ -  [User Story](#user_story)
+ - Data Model](#data_model)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
 - [Built Using](#built_using)
+- [Author](#author)
+
 - [Guided By](#guided_by)
 
 
@@ -22,34 +30,25 @@
  we ensure the customers high quality service ,fast delivery and the best products in very reasonable prices,we accept customer's opinions as the customer's satisfaction are our main priority.
     <br> 
 </p>
+ 
+ 
 
-## 🏁 Getting Started <a name = "getting_started"></a>
 
 
+
+ ##  User Story <a name = "#user_story"></a>
  
- 
- 
- 
- Tools Used
- 
- Node Js
- Express 
- mongoDB
- React Js 
- axios package
- 
- 
- User Story 
  
  https://trello.com/b/umnyXcxS/project-4
  
- Data Model
+ 
+ ## Data Model <a name = "data_model"></a>
 
  
- MongoDB 
+ mongoDB 
  
  
- Getting Started
+## 🏁 Getting Started <a name = "getting_started"></a>
   clone Repostiory
   npm init -y to view package json
  npm i in backend to install packages 
@@ -58,7 +57,6 @@
  npm run dev to turn server on
  npm start to run frontend
  
- Usage 
  
  for example 
  
@@ -84,24 +82,29 @@
  Orders Schema
 Admin show orders
  
-  Author:
+ ## Author <a name = "author"></a>
  Anas Naamneh
  
- Acknowledgments  
+ ## Acknowlegments <a name = "author"></a>
  
  Mohammad Farhan
  Bayan Alsafadi
  Ghadiaa Tabikh
  Mai Shagarain
  
- 
- 
+ ## 🎈 Usage <a name="usage"></a>
+
+
  ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [MongoDB](https://www.mongodb.com/) - Database
 - [Express JS](https://expressjs.com/) - Server Framework
 - [React JS](https://https://reactjs.org/) - Web Framework
 - [Node JS](https://nodejs.org/en/) - Server Environment
+- axios package
+
+
+
  
  
  ## ⚠️ Guided By <a name = "guided_by"></a>
