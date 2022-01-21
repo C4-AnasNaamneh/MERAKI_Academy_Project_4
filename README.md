@@ -1,19 +1,31 @@
 # MERAKI_Academy_Project_4
 
-Project (E-Buy)
+
+<h3 align="center"> Project (E-Buy)</h3>
+
+ ## 📝 Table of Contents
  
-  A website that allows people to buy goodss and products over the internet . 
+ - [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [Guided By](#guided_by)
+
+
+
+## 🧐 About <a name = "about"></a>
+ <p align="center">
+   A website that allows people to buy goodss and products over the internet . 
  Through an E-Buy website, a business can process orders, accept payments,
  manage shipping and logistics,and provide customer service.
  
  we ensure the customers high quality service ,fast delivery and the best products in very reasonable prices,we accept customer's opinions as the customer's satisfaction are our main priority.
+    <br> 
+</p>
 
- 
- ## 📝 Table of Contents
+## 🏁 Getting Started <a name = "getting_started"></a>
 
- 
- 
- 
+
  
  
  
