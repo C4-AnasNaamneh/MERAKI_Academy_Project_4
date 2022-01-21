@@ -96,3 +96,17 @@ Admin show orders
  
  
  
+ ## ⛏️ Built Using <a name = "built_using"></a>
+
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Express JS](https://expressjs.com/) - Server Framework
+- [React JS](https://https://reactjs.org/) - Web Framework
+- [Node JS](https://nodejs.org/en/) - Server Environment
+ 
+ 
+ ## ⚠️ Guided By <a name = "guided_by"></a>
+
+This project is guided by ©️ **[MERAKI Academy](https://www.meraki-academy.org)**
+
+ 
+ 
