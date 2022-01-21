@@ -64,8 +64,10 @@ clone Repostiory to your local machine
  then use visuale studio to install packages
  
   ``` 
- `npm i`
+ npm i in backend git bash
+ npm i in front end git bash
   npm i axios in frontend
+  
 
  ``` 
 
@@ -91,22 +93,22 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
-```
 
 if package json isn't present 
-
 ```
   npm init -y to view package json
-```
+  ```
+
+
 
 
  
  
  ## 🎈 Usage <a name="usage"></a>
 
-
+```
  -POST request to /users route 
- ```
+ 
  input: 
  
  "firstName": Anas
@@ -127,19 +129,19 @@ if package json isn't present
  email: naamnih.anas@gmail.com
  password: "12345"
  role: "admin"
-  ```
+```  
 
  ## Author <a name = "author"></a>
 
 -Anas Naamneh
 
  ## Acknowlegments <a name = "acknowlegments"></a>
- <p>
+ 
  Mohammad Farhan
  Bayan Alsafadi
  Ghadiaa Tabikh
  Mai Shagarain
-    </p>
+   
 
 
 
