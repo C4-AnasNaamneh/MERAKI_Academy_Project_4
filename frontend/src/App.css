@@ -571,3 +571,60 @@ background-color: #F6F6F6;
   background-color: rgba(0, 0, 0, 0.911);
   color: white;
 }
+
+#slider{
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  /* width: 500%; */
+  margin: 10px;
+  left: 0;
+  animation: 20s slider infinite
+}
+
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+}
+
+.sliderImg1{
+height: 300px;
+}
+
+.sliderImg2{
+height: 300px;
+}
+
+.sliderImg3{
+  height: 300px;
+}
+
+.sliderImg4{
+  height: 300px;
+}
+
+.sliderImg5{
+  height: 300px;
+}
