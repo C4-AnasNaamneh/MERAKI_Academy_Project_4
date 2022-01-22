@@ -1,9 +1,7 @@
 const orderModel = require("../database/models/ordersSchema");
 
 const createNewOrder = (req, res) => {
-  //const product_id = req.params.id;
   const { totalPrice, product_id } = req.body;
-  // const product_idsoso = req.body
 
   const user_id = req.token.userId;
 
@@ -32,8 +30,6 @@ const getAllOrders = (req, res) => {
 
     .then((result) => {
       res.status(200).json(result);
-      console.log();
-      //totalPrice = [result.data.product_id]
     })
     .catch((err) => {
       res.status(500).json({

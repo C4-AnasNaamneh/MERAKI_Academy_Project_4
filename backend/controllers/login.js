@@ -10,7 +10,6 @@ const login = (req, res) => {
   userModel
     .findOne({ email: req.body.email.toLowerCase() })
     .then(async (result) => {
-      console.log(result);
 
       await bcrypt.compare(password, result.password, (err, compare) => {
         const payload = {
