@@ -1,5 +1,7 @@
 const productModel = require("../database/models/productsSchema");
 
+
+
 const createNewProduct = (req, res) => {
   const { title, description, price, img } = req.body;
 
@@ -12,15 +14,15 @@ const createNewProduct = (req, res) => {
   product
     .save()
     .then((result) => {
-     res.status(201).json({
-       success:true,
-       message: "Product Added"
-     })
+      res.status(201).json({
+        success: true,
+        message: "Product Added",
+      });
     })
     .catch((err) => {
       res.status(404).json({
-        success:false,
-        message: "Server Error"
+        success: false,
+        message: "Server Error",
       });
     });
 };
@@ -32,6 +34,34 @@ const getAllProducts = (req, res) => {
       res.status(200).json(result);
     })
     .catch((err) => {
+      res.status(500).json({
+        success: false,
+        message: "server error",
+      });
+    });
+};
+
+const getProductsById = (req, res) => {
+   // const getById = req.body._id;
+    
+    //works with findone and find by id
+
+  const  getById =  req.params.id;
+
+
+  productModel
+    .findById({ _id: getById })
+
+    .then((result) => {
+      console.log(getById);
+      //console.log(result);
+      res.status(200).json({
+        success: true,
+        message: `Succeeded to get product with id: ${getById}`,
+      });
+    })
+    .catch((err) => {
+      console.log(err);
       res.status(500).json({
         success: false,
         message: "server error",
@@ -76,17 +106,19 @@ const updateProductById = (req, res) => {
         success: true,
         message: `Succeeded to update product with id: ${updateById}`,
       });
-    }).catch((err)=>{
-        res.status(404).json({
-            success:false,
-            message: `Failed to update product with id: ${updateById}`
-        })
     })
+    .catch((err) => {
+      res.status(404).json({
+        success: false,
+        message: `Failed to update product with id: ${updateById}`,
+      });
+    });
 };
 
 module.exports = {
   createNewProduct,
   getAllProducts,
+  getProductsById,
   deleteProductById,
   updateProductById,
 };
