@@ -42,9 +42,7 @@ const getAllProducts = (req, res) => {
 };
 
 const getProductsById = (req, res) => {
-   // const getById = req.body._id;
-    
-    //works with findone and find by id
+  
 
   const  getById =  req.params.id;
 
@@ -53,11 +51,10 @@ const getProductsById = (req, res) => {
     .findById({ _id: getById })
 
     .then((result) => {
-      console.log(getById);
-      //console.log(result);
       res.status(200).json({
         success: true,
         message: `Succeeded to get product with id: ${getById}`,
+        result: [result]
       });
     })
     .catch((err) => {
